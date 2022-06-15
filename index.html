@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome To My Portfolio!</title>
+
 </head>
 <body>
 <!--Nav Bar-->
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li>Projects</li>
-            <li>Resources</li>
-            <li>Community</li>
-            <li>Contact</li>
+    <h1>TEST TEST</h1>
+    <nav id="nav">
+        <ul id="nav-list">
+            <li><button id="home-button" type="button">Home</button></li>
+            <li><button id="projects-button" type="button">Projects</button></li>
+            <li><button id="contact-button">Contact</button></li>
         </ul>
-<!--Floated right, Hamburger Menu for display settings. Normal, Dark, and Accessible-->
+<!--Floated right, Drop down for display settings. Normal, Dark, and Accessible-->
+        <div id="theme-div">
+            <button id="theme" type="button">BUTTON</button>
+            <ul id="theme-select">
+                <li><button id="light-theme" type="button">Light Theme</button></li>
+                <li><button id="dark-theme" type="button">Theme</button></li>
+                <li> <button type="button" id="accessible-theme">Accessible Theme</button></li>
+            </ul>
+        </div>
     </nav>
 <!--Create a giant section, flexbox, to contain 'cards' of different projects I'm proud of-->
     <section id="projects">
     <!--Create cards with img, brief description, and links-->
     </section>
+<script src="js/main.js"></script>
+<link rel="stylesheet" href="css/style.css">
 </body>
 </html>

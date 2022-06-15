@@ -1,0 +1,82 @@
+/*Setting up CSS variables to be altered through themes*/
+/*Mobile First Design*/
+:root {
+    --primary-color: white;
+    --secondary-color: blue;
+    --font-color: black;
+    --bg-color: lightgrey;
+    --heading-color: gold;
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+/*Tablet View*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+/*Desktop View*/
+@media screen and (min-width: 1024px){
+
+}
+
+/*Setting themes*/
+[data-theme="dark"] {
+    --primary-color: grey;
+    --secondary-color: lightblue;
+    --font-color: white;
+    --bg-color: darkgrey;
+    --heading-color: red;
+}
+
+[data-theme="accessible"] {
+    --primary-color: yellow;
+    --secondary-color: orange;
+    --font-color: green;
+    --bg-color: gold;
+    --heading-color: white;
+}
+
+
+/*Switching Theme*/
+button {
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+    border-style: none;
+}
+
+#theme-select{
+    display: none;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color)
+}
+
+h1 {
+    background-color: var(--secondary-color);
+}
+
+nav {
+    width: 100%;
+    display: inline;
+    float: left;
+}
+
+ul li{
+    list-style: none;
+}
+
+#nav-list {
+    width: 80%;
+    float:left;
+}
+
+#nav-list li{
+    float: left;
+    margin: 1em;
+}
+
